@@ -1,0 +1,41 @@
+body{
+  background-color: #eceff1;
+}
+
+.transition-grow {
+    animation: grow 2s;
+}
+
+.bg-blue{
+	background:#77adf1;
+}
+
+.map{
+  height: 500px; 
+  width: 80%;
+  margin-top: 50px!important;
+  margin: auto;
+}
+
+.transition-grow {
+    animation: grow 2s;
+}
+
+@keyframes grow {
+  0% {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  80% {
+    width: 80%;
+    margin: 30px auto auto auto;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Georreferenciación</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+
+<body>
+
+	<nav class="navbar navbar-light bg-light" style=" box-shadow: 2px 2px 5px #999;">
+		<a class="navbar-brand" href="../index.html"> <img title="Inicio"
+			src="../img/moti.png" width="150" class="d-inline-block align-top"
+			alt="">
+		</a>
+		<button type="button" class="btn btn-outline-warning"
+			data-toggle="modal" data-target="#mymodal">Ayuda</button>
+	</nav>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="mymodal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-blue" style="color:#fff;">
+					<h5 class="modal-title" id="exampleModalLongTitle">Ayudas:</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					1. El navegador que esta utilizando debe soportar
+					georreferenciación.
+					<hr>
+					2. Asegurese de tener habilitado el permiso para la
+					georreferenciación en el navegador.
+					<hr>
+					3. Cada marcador en el mapa representa la ubicación donde fue
+					capturada y analizada una fotografía.
+					<hr>
+					4. Haga click sobre el marcador para observar la fotografía.
+					<hr>
+					5. Mantenga el cursor ubicado sobre un marcador para conocer la dirección.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-danger"
+						data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  Mapa con las ubicaciones -->
+	<div id="mapa" class="map"></div>
+
+
+	<!-- JavaScript -->
+        <!--<script type="text/javascript" src="../js/jquery-3.3.1.slim.min.js"></script>-->
+        <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="../js/mapJS.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9D_E_EIrCZ5bfzKNKHstHhnkj6xEKUK4&callback=initMap">
+		
+	</script>
+</body>
+</html>
